@@ -9,8 +9,8 @@ app.use(bodyP.urlencoded({ extended: false }));
 app.use(bodyP.json());
 
 app.use(cors({
-    origin: ['https://herokunodejsg2.herokuapp.com/']
-}))
+    origin: ['https://herokunodejsg2.herokuapp.com', 'http://192.168.1.11:8080']
+}));
 
 mongoose.set("strictQuery", false);
 mongoose.connect("mongodb+srv://admin:123@tmdtn2st7.nu0qeav.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
