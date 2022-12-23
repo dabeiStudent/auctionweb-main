@@ -9,7 +9,7 @@ app.use(bodyP.urlencoded({ extended: false }));
 app.use(bodyP.json());
 
 app.use(cors({
-    origin: ['https://https://herokunodejsg2.herokuapp.com/', 'http://localhost:8080']
+    origin: ['http://https://herokunodejsg2.herokuapp.com/']
 }))
 
 mongoose.set("strictQuery", false);
